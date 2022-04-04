@@ -6,16 +6,464 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>1024</width>
     <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar"/>
-  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="header">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>2000</width>
+      <height>85</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGraphicsView
+{
+	background: #BFBFBF;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="logo">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>17</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../Assets/Maintainance Icon White.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="logo_bg">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>11</y>
+      <width>91</width>
+      <height>62</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+background: #484E58;
+border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>2000</width>
+      <height>1000</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QStackedWidget
+{
+background: #222831;
+}
+</string>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QLabel" name="delete_junk">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>94</y>
+        <width>244</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel
+{
+background: #BFBFBF;
+color: black;
+}</string>
+      </property>
+      <property name="text">
+       <string>                      Delete Junk</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="junk_bg">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>94</y>
+        <width>244</width>
+        <height>494</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGraphicsView
+{
+background: #484E58;
+border-radius: 7px;
+}</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="check_1">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>173</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox
+{
+background: none;
+border-radius: 7px;
+color: black;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="delete_1">
+      <property name="geometry">
+       <rect>
+        <x>61</x>
+        <y>161</y>
+        <width>142</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background: #BFBFBF;
+border-radius: 7px;
+coloor: black;
+}</string>
+      </property>
+      <property name="text">
+       <string>Delete 1</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="check_2">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>229</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox
+{
+background: none;
+border-radius: 7px;
+color: black;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="delete_2">
+      <property name="geometry">
+       <rect>
+        <x>61</x>
+        <y>216</y>
+        <width>142</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background: #BFBFBF;
+border-radius: 7px;
+coloor: black;
+}</string>
+      </property>
+      <property name="text">
+       <string>Delete 1</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="check_3">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>284</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox
+{
+background: none;
+border-radius: 7px;
+color: black;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="delete_3">
+      <property name="geometry">
+       <rect>
+        <x>61</x>
+        <y>272</y>
+        <width>142</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background: #BFBFBF;
+border-radius: 7px;
+coloor: black;
+}</string>
+      </property>
+      <property name="text">
+       <string>Delete 1</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="delete_4">
+      <property name="geometry">
+       <rect>
+        <x>61</x>
+        <y>329</y>
+        <width>142</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background: #BFBFBF;
+border-radius: 7px;
+coloor: black;
+}</string>
+      </property>
+      <property name="text">
+       <string>Delete 1</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="check_4">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>342</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox
+{
+background: none;
+border-radius: 7px;
+color: black;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="delete_5">
+      <property name="geometry">
+       <rect>
+        <x>61</x>
+        <y>384</y>
+        <width>142</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background: #BFBFBF;
+border-radius: 7px;
+coloor: black;
+}</string>
+      </property>
+      <property name="text">
+       <string>Delete 1</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="check_5">
+      <property name="geometry">
+       <rect>
+        <x>31</x>
+        <y>397</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox
+{
+background: none;
+border-radius: 7px;
+color: black;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="select_all">
+      <property name="geometry">
+       <rect>
+        <x>51</x>
+        <y>463</y>
+        <width>162</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background: #29A19C;
+border-radius: 7px;
+color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Select All</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="delete_selected">
+      <property name="geometry">
+       <rect>
+        <x>51</x>
+        <y>520</y>
+        <width>162</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+background: #29A19C;
+border-radius: 7px;
+color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Delete</string>
+      </property>
+     </widget>
+     <zorder>junk_bg</zorder>
+     <zorder>delete_junk</zorder>
+     <zorder>check_1</zorder>
+     <zorder>delete_1</zorder>
+     <zorder>check_2</zorder>
+     <zorder>delete_2</zorder>
+     <zorder>check_3</zorder>
+     <zorder>delete_3</zorder>
+     <zorder>delete_4</zorder>
+     <zorder>check_4</zorder>
+     <zorder>delete_5</zorder>
+     <zorder>check_5</zorder>
+     <zorder>select_all</zorder>
+     <zorder>delete_selected</zorder>
+    </widget>
+    <widget class="QWidget" name="page_2"/>
+    <widget class="QWidget" name="page_3"/>
+   </widget>
+   <widget class="QPushButton" name="dashboard_btn">
+    <property name="geometry">
+     <rect>
+      <x>365</x>
+      <y>11</y>
+      <width>91</width>
+      <height>62</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+background: #484E58;
+border-radius: 10px;
+color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Dashboard</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="processes_btn">
+    <property name="geometry">
+     <rect>
+      <x>466</x>
+      <y>11</y>
+      <width>91</width>
+      <height>62</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+background: #484E58;
+border-radius: 10px;
+color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Processes</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="resetpw_btn">
+    <property name="geometry">
+     <rect>
+      <x>568</x>
+      <y>11</y>
+      <width>91</width>
+      <height>62</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+background: #484E58;
+border-radius: 10px;
+color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Reset Pw</string>
+    </property>
+   </widget>
+   <zorder>stackedWidget</zorder>
+   <zorder>header</zorder>
+   <zorder>logo_bg</zorder>
+   <zorder>logo</zorder>
+   <zorder>dashboard_btn</zorder>
+   <zorder>processes_btn</zorder>
+   <zorder>resetpw_btn</zorder>
+  </widget>
  </widget>
  <resources/>
  <connections/>

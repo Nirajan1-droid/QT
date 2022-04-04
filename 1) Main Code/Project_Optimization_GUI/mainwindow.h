@@ -15,6 +15,19 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_delete_1_clicked();
+
+    void on_delete_2_clicked();
+
+    void on_delete_3_clicked();
+
+    void on_delete_4_clicked();
+
+    void on_delete_5_clicked();
+
+    void on_select_all_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
