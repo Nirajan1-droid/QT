@@ -28,6 +28,16 @@ private slots:
 
     void on_select_all_clicked();
 
+    void on_disk_1_clicked();
+
+    void on_disk_3_clicked();
+
+    void on_disk_2_combo_highlighted(int index);
+
+    void on_dashboard_btn_pressed();
+
+    void on_processes_btn_pressed();
+
 private:
     Ui::MainWindow *ui;
 };

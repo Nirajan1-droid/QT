@@ -101,3 +101,76 @@ void MainWindow::on_select_all_clicked()
     }
 }
 
+
+void MainWindow::on_disk_1_clicked()
+{
+    if(ui->radio_1->isChecked())
+    {
+        ui->radio_1->setChecked(false);
+    }
+    else
+    {
+        ui->radio_1->setChecked(true);
+    }
+}
+
+void MainWindow::on_disk_3_clicked()
+{
+    if(ui->radio_3->isChecked())
+    {
+        ui->radio_3->setChecked(false);
+    }
+    else
+    {
+        ui->radio_3->setChecked(true);
+    }
+}
+
+
+
+void MainWindow::on_disk_2_combo_highlighted(int index)
+{
+    if(index >= 0)                  // Just making use of 'index'
+    {
+        if(ui->radio_2->isChecked())
+        {
+            ui->radio_2->setChecked(false);
+        }
+        else
+        {
+            ui->radio_2->setChecked(true);
+        }
+    }
+}
+
+
+void MainWindow::on_dashboard_btn_pressed()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+    ui->dashboard_btn->setStyleSheet(QString("QPushButton { "
+                                             "background-color: #29A19C; "
+                                             "color: white;"
+                                             "border-radius: 10px;"
+                                             "}"));
+    ui->processes_btn->setStyleSheet(QString("QPushButton { "
+                                             "background-color: #BFBFBF; "
+                                             "color: black;"
+                                             "border-radius: 10px;"
+                                             "}"));
+}
+
+void MainWindow::on_processes_btn_pressed()
+{
+    ui->stackedWidget->setCurrentIndex(1);
+    ui->dashboard_btn->setStyleSheet(QString("QPushButton { "
+                                             "background-color: #BFBFBF; "
+                                             "color: black;"
+                                             "border-radius: 10px;"
+                                             "}"));
+    ui->processes_btn->setStyleSheet(QString("QPushButton { "
+                                             "background-color: #29A19C; "
+                                             "color: white;"
+                                             "border-radius: 10px;"
+                                             "}"));
+}
+

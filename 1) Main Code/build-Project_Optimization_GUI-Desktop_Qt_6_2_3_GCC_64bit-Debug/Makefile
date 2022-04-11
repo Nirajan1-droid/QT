@@ -174,6 +174,7 @@ DIST          = /home/giver_kdk/Qt/6.2.3/gcc_64/mkspecs/features/spec_pre.prf \
 		/home/giver_kdk/Qt/6.2.3/gcc_64/mkspecs/features/qt_config.prf \
 		/home/giver_kdk/Qt/6.2.3/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/giver_kdk/Qt/6.2.3/gcc_64/mkspecs/features/spec_post.prf \
+		../Project_Optimization_GUI/.qmake.stash \
 		/home/giver_kdk/Qt/6.2.3/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/giver_kdk/Qt/6.2.3/gcc_64/mkspecs/features/toolchain.prf \
 		/home/giver_kdk/Qt/6.2.3/gcc_64/mkspecs/features/default_pre.prf \
@@ -324,6 +325,7 @@ Makefile: ../Project_Optimization_GUI/Project_Optimization_GUI.pro /home/giver_k
 		/home/giver_kdk/Qt/6.2.3/gcc_64/mkspecs/features/qt_config.prf \
 		/home/giver_kdk/Qt/6.2.3/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/giver_kdk/Qt/6.2.3/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/home/giver_kdk/Qt/6.2.3/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/giver_kdk/Qt/6.2.3/gcc_64/mkspecs/features/toolchain.prf \
 		/home/giver_kdk/Qt/6.2.3/gcc_64/mkspecs/features/default_pre.prf \
@@ -466,6 +468,7 @@ Makefile: ../Project_Optimization_GUI/Project_Optimization_GUI.pro /home/giver_k
 /home/giver_kdk/Qt/6.2.3/gcc_64/mkspecs/features/qt_config.prf:
 /home/giver_kdk/Qt/6.2.3/gcc_64/mkspecs/linux-g++/qmake.conf:
 /home/giver_kdk/Qt/6.2.3/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /home/giver_kdk/Qt/6.2.3/gcc_64/mkspecs/features/exclusive_builds.prf:
 /home/giver_kdk/Qt/6.2.3/gcc_64/mkspecs/features/toolchain.prf:
 /home/giver_kdk/Qt/6.2.3/gcc_64/mkspecs/features/default_pre.prf:
@@ -979,7 +982,79 @@ mainwindow.o: ../Project_Optimization_GUI/mainwindow.cpp ../Project_Optimization
 		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtCore/qnativeinterface.h \
 		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qtabwidget.h \
 		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtGui/qicon.h \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtCore/QVariant \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/QApplication \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qapplication.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtCore/qcoreapplication.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtCore/qeventloop.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtCore/qcoreapplication_platform.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtCore/qfuture.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtCore/qfutureinterface.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtCore/qmutex.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtCore/qresultstore.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtCore/qfuture_impl.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtCore/qthreadpool.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtCore/qthread.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtCore/qdeadlinetimer.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtCore/qelapsedtimer.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtCore/qrunnable.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtCore/qexception.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtGui/qguiapplication.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtGui/qinputmethod.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtCore/qlocale.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtGui/qguiapplication_platform.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/QCheckBox \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qcheckbox.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/QComboBox \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qcombobox.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qstyleoption.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtGui/qvalidator.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtCore/qregularexpression.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qslider.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qabstractslider.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qstyle.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qtabbar.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qrubberband.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qframe.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtCore/qabstractitemmodel.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/QGraphicsView \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qgraphicsview.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtGui/qpainter.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtGui/qtextoption.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtGui/qpen.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qscrollarea.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qgraphicsscene.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/QHeaderView \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qheaderview.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtCore/qitemselectionmodel.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/QLabel \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qlabel.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtGui/qpicture.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtGui/qtextdocument.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/QLineEdit \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qlineedit.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtGui/qtextcursor.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtGui/qtextformat.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/QProgressBar \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qprogressbar.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/QPushButton \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qpushbutton.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/QRadioButton \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qradiobutton.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/QStackedWidget \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qstackedwidget.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/QStatusBar \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qstatusbar.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/QTableWidget \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qtablewidget.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/qtableview.h \
+		/home/giver_kdk/Qt/6.2.3/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../Project_Optimization_GUI/mainwindow.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 
