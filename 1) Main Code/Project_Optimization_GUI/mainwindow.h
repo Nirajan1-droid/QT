@@ -38,6 +38,8 @@ private slots:
 
     void on_processes_btn_pressed();
 
+    void on_disk_2_combo_activated(int index);
+
 private:
     Ui::MainWindow *ui;
 };
