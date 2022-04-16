@@ -40,6 +40,8 @@ private slots:
 
     void on_disk_2_combo_activated(int index);
 
+    void on_defrag_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

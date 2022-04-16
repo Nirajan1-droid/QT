@@ -1,11 +1,27 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QDebug>
+#include <QSysInfo>
+#include <iostream>
+using namespace std;
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    qDebug() << QSysInfo::kernelType();
+    qDebug() << QSysInfo::kernelVersion();
+    qDebug() << QSysInfo::machineHostName();
+    qDebug() << QSysInfo::productType();
+    qDebug() << QSysInfo::productVersion();
+    qDebug() << QSysInfo::currentCpuArchitecture();
+    qDebug() << QSysInfo::prettyProductName();
+
+
+
+
 }
 
 MainWindow::~MainWindow()
@@ -156,6 +172,15 @@ void MainWindow::on_processes_btn_pressed()
 
 void MainWindow::on_disk_2_combo_activated(int index)
 {
+    if(index > 0)
+    {
 
+    }
+}
+
+
+void MainWindow::on_defrag_clicked()
+{
+    cout << "Hello World" << endl;
 }
 
